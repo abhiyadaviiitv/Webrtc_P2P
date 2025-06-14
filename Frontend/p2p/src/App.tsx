@@ -1,7 +1,6 @@
-import {BrowserRouter , Routes , Route} from "react-router-dom";
-import Home from './components/Home';
-import Landing from './components/Landing';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Room from "./components/Room";
+import VideoChat from './components/VideoChat';
 
 function App() {
   
@@ -9,8 +8,7 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Landing />} ></Route>
-      <Route path="/home" element={<Home />}></Route>
+      <Route path="/" element={<VideoChat />} ></Route>
       <Route path="/room" element={<Room />}></Route>
     </Routes>
     </BrowserRouter>
