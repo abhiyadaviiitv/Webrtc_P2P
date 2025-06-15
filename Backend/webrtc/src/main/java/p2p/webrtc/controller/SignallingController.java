@@ -10,7 +10,7 @@ import p2p.webrtc.model.SignalMessage;
 @RestController
 public class SignallingController {
     @MessageMapping("/signal/{roomId}")
-    @SendTo("/videocall/signal/{roomId}")
+    @SendTo("/topic/videocall/signal/{roomId}")
     public SignalMessage handleSignal(
         @DestinationVariable String roomId, 
         SignalMessage message

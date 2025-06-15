@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class SignalMessage {
-    private String type; // "offer", "answer", "candidate"
+    private String type;
     private String sender;
     private Object payload;
 }

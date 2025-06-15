@@ -7,6 +7,7 @@ interface RoomControlsProps {
   joinRoom: (roomId: string) => Promise<boolean>;
   startCall: (isCreator: boolean) => void;
   isInCall: boolean;
+  otherUserId: string | null;
 }
 
 const RoomControls: React.FC<RoomControlsProps> = ({
